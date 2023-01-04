@@ -68,3 +68,20 @@ while number > 0:
 
     number = number // 10
     print(digit, end=" ")
+
+
+
+#Caesar cypher
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+user_input = input("What message do you want to encode? ")
+output = ""
+
+for letter in output:
+    if letter == " ":
+        output = output + " "
+    else:
+        position = alphabet.find(letter)
+        output = output + (int(position) + 1)
+print(output)
